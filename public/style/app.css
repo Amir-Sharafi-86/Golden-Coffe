@@ -7,10 +7,13 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
+    --color-orange-200: oklch(0.901 0.076 70.697);
+    --color-gray-300: oklch(0.872 0.01 258.338);
     --color-black: #000;
     --spacing: 0.25rem;
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --radius-3xl: 1.5rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -29,6 +32,7 @@
       --font-mono--font-variation-settings
     );
     --font-Dana: "Dana";
+    --font-DanaDemiBold: "Dana DemiBold";
   }
 }
 @layer base {
@@ -230,6 +234,15 @@
   .sticky {
     position: sticky;
   }
+  .top-9 {
+    top: calc(var(--spacing) * 9);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
   .isolate {
     isolation: isolate;
   }
@@ -361,6 +374,9 @@
       padding-inline: calc(var(--spacing) * 2.5) !important;
     }
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .box-border {
     box-sizing: border-box;
   }
@@ -448,8 +464,18 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .size-6 {
+    width: calc(var(--spacing) * 6);
+    height: calc(var(--spacing) * 6);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
   .h-9 {
     height: calc(var(--spacing) * 9);
+  }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
   }
   .h-screen {
     height: 100vh;
@@ -469,8 +495,14 @@
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
   .w-\[90\%\] {
     width: 90%;
+  }
+  .w-full {
+    width: 100%;
   }
   .w-screen {
     width: 100vw;
@@ -866,6 +898,15 @@
       --tw-space-y-reverse: 1;
     }
   }
+  .gap-x-2\.5 {
+    column-gap: calc(var(--spacing) * 2.5);
+  }
+  .gap-x-5 {
+    column-gap: calc(var(--spacing) * 5);
+  }
+  .gap-x-9 {
+    column-gap: calc(var(--spacing) * 9);
+  }
   .space-x-reverse {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 1;
@@ -954,6 +995,9 @@
   }
   .rounded {
     border-radius: 0.25rem;
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
   }
   .rounded-s {
     border-start-start-radius: 0.25rem;
@@ -1077,6 +1121,9 @@
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
+  }
+  .bg-black\/50 {
+    background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -1262,6 +1309,12 @@
   .p-9 {
     padding: calc(var(--spacing) * 9);
   }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .text-center {
     text-align: center;
   }
@@ -1306,6 +1359,13 @@
   }
   .font-Dana {
     font-family: var(--font-Dana);
+  }
+  .font-DanaDemiBold {
+    font-family: var(--font-DanaDemiBold);
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .leading-none {
     --tw-leading: 1;
@@ -1384,8 +1444,11 @@
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
   }
-  .text-red-500 {
-    color: var(--color-red-500);
+  .text-gray-300 {
+    color: var(--color-gray-300);
+  }
+  .text-orange-200 {
+    color: var(--color-orange-200);
   }
   .capitalize {
     text-transform: capitalize;
@@ -1827,17 +1890,6 @@
   }
   .transform-view {
     transform-box: view-box;
-  }
-  .\*\:text-4xl {
-    :is(& > *) {
-      font-size: var(--text-4xl);
-      line-height: var(--tw-leading, var(--text-4xl--line-height));
-    }
-  }
-  .dark\:bg-black {
-    &:where(.dark, .dark *) {
-      background-color: var(--color-black);
-    }
   }
 }
 @layer base {
