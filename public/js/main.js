@@ -1,4 +1,4 @@
-const toggleThemeBtn = document.querySelector("#toggle-theme");
+const toggleThemeBtn = document.querySelector(".toggle-theme");
 toggleThemeBtn.addEventListener("click" , function() {
     if(localStorage.theme === "dark") {
         document.documentElement.classList.remove("dark")

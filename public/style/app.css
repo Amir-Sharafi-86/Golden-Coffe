@@ -1387,6 +1387,9 @@
     --tw-border-style: solid;
     border-style: solid;
   }
+  .border-t-\[\#F3F4F6\] {
+    border-top-color: #F3F4F6;
+  }
   .border-t-orange-300 {
     border-top-color: var(--color-orange-300);
   }
