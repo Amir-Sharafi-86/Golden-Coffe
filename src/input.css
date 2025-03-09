@@ -1,11 +1,13 @@
 @import "tailwindcss";
 @theme {
+
  --Color-brown-100 : "#ECE0D1";
  --Color-brown-300 : "#DBC1AC";
  --Color-brown-600 : "#967259";
  --Color-brown-900 : "#634832";
+ --color-gray-normal     : "#3F3F46"
 
- --shadow-noraml  : 0px 1px  10px rgba(0, 0, 0, 0.05);
+ --shadow-4xl : 0px 1px  10px rgba(0, 0, 0, 0.05);
 
  --radius-4xl :  "32px"; 
  
@@ -13,7 +15,9 @@
  --font-DanaMedium : "Dana Medium";
  --font-DanaDemiBold : "Dana DemiBold";
 
-    --breakpoint-xs : "480px"
+    --breakpoint-xs : "480px";
+
+    --tracking-normaling : "-0.065em";
 }
 
 @utility container {
@@ -36,12 +40,13 @@
 
 @layer utilities {
     .bg-home {
-        background-image: url("");
+        background-image: url("../imges/headerBgDesktop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
-@custom-variant hover (&:hover);
 
 
 

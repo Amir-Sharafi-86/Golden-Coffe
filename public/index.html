@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/app.css">
     <link rel="icon" href="./imges/app-logo.png">
 </head>
-<body class="font-Dana bg-gray-100 dark:bg-zinc-800 ">
+<body class="font-Dana bg-gray-100 dark:bg-zinc-800 bg-home backdrop:blur-[6px]  ">
 <svg class="hidden">
   <symbol>
     <svg id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -29,13 +29,27 @@
 <header class="w-[90%] h-24 bg-black/50 mx-auto rounded-3xl flex items-center px-10 fixed top-9 right-0 left-0">
   <div class="flex justify-between w-full items-center">
     <!-- logo & Menu -->
-    <nav class="flex gap-x-9 items-center">
+    <nav class="flex gap-x-9 items-center h-14"> 
       <div>
         <img src="./imges/app-logo.png" alt="">
-      </div>
-      <ul class="flex gap-x-9 text-xl text-gray-300    ">
+      </div> 
+      <!-- menu -->
+      <ul class="tracking-[-0.065em] flex gap-x-9 text-xl text-gray-300 h-full *:leading-[56px]">
         <li><a href="" class="font-DanaDemiBold text-orange-200">صفحه اصلی</a></li>
-        <li><a href="">فروشگاه</a></li>
+        <!-- Wrraper SubMenus -->
+        <li class="relative group">
+          <a href="">فروشگاه</a>
+          <!-- SubMenus -->
+          <div class="*:block space-y-4 w-52 absolute text-base   text-[#3F3F46] dark:text-white bg-white p-6 rounded-2xl border-t-3 border-t-orange-300 *:hover:transition-all *:hover:text-orange-300 invisible opacity-0 group-hover:opacity-100 group-hover:visible top-full ">
+           <a href="">قهوه ویژه</a>
+           <a href="">ویژه در سطح جهانی</a>
+           <a href="">قهوه درجه یک</a>
+           <a href="">ترکیبات تجاری</a>
+           <a href="">کپسول قهوه</a>
+           <a href="">قهوه زینو برزیلی</a>
+          </div>
+        </li>
+        
         <li><a href="">دیکشنری</a></li>
         <li><a href="">بلاگ</a></li>
         <li><a href="">درباره ما</a></li>
