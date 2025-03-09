@@ -40,7 +40,7 @@
 
 @layer utilities {
     .bg-home {
-        background-image: url("../imges/headerBgDesktop.png");
+        background-image: url("../imges/headerBgDesktop.webp");
         background-repeat: no-repeat;
         background-size: cover;
     }

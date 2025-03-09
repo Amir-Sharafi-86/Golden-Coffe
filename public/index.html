@@ -6,6 +6,13 @@
     <title>Golden Coffe </title>
     <link rel="stylesheet" href="style/app.css">
     <link rel="icon" href="./imges/app-logo.png">
+    <script type="script">
+      document.documentElement.classList.toggle(
+  "dark",
+  localStorage.theme === "dark" ||
+    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
+);
+    </script>
 </head>
 <body class="font-Dana bg-gray-100 dark:bg-zinc-800 bg-home backdrop:blur-[6px]  ">
 <!-- Svg All app -->
@@ -83,8 +90,7 @@
              <div class="absolute 
              group-hover:opacity-100 group-hover:visible
              top-full
-             invisible
-             opacity-0
+             
              w-[400px]
              p-5
              left-0
@@ -102,6 +108,19 @@
               </div>
             </div>
             <!-- cart body -->
+              <div class="wrapper-cart font-DanaMedium flex gap-x-2.5 mt-5">
+                <img src="./imges/products/p1.png" class="h-30 w-30" alt="">
+                <div class="flex flex-col justify-between">
+                  <h4 class=" text-zinc-700 text-base dark:text-white">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                  <div>
+                    <span class="text-teal-600 dark:text-teal-500 text-xs">14.500 تومان تخفیف</span>
+                    <div class="font-DanaDemiBold text-gray-700 dark:text-white ">
+                      175,000 
+                      <span class="text-sm"> تومان</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
            </div>
            <!-- theme btn  -->
