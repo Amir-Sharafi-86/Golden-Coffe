@@ -46,7 +46,9 @@
 
  --shadow-4xl : 0px 1px  10px rgba(0, 0, 0, 0.05);
     --font-Dana: "Dana";
+    --font-DanaMedium: "Dana Medium";
     --font-DanaDemiBold: "Dana DemiBold";
+    --tracking-normaling: "-0.065em";
   }
 }
 @layer base {
@@ -1433,6 +1435,9 @@
   .font-DanaDemiBold {
     font-family: var(--font-DanaDemiBold);
   }
+  .font-DanaMedium {
+    font-family: var(--font-DanaMedium);
+  }
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
@@ -1452,6 +1457,10 @@
   .tracking-\[-0\.065em\] {
     --tw-tracking: -0.065em;
     letter-spacing: -0.065em;
+  }
+  .tracking-normaling {
+    --tw-tracking: var(--tracking-normaling);
+    letter-spacing: var(--tracking-normaling);
   }
   .text-balance {
     text-wrap: balance;
