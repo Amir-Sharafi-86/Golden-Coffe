@@ -58,7 +58,7 @@
         <li class="relative group">
           <a href="" class="group-hover:text-orange-300 transition-colors:">فروشگاه</a>
           <!-- SubMenus -->
-          <div class="*:block space-y-4 w-52 absolute text-base   text-[#3F3F46] dark:text-white bg-white p-6 rounded-2xl border-t-3 border-t-orange-300 *:hover:transition-all transition-all dark:bg-zinc-700 *:hover:text-orange-300 invisible opacity-0 group-hover:opacity-100 group-hover:visible top-full ">
+          <div class="*:block space-y-4 w-52 absolute text-base   text-[#3F3F46] dark:text-white bg-white p-6 rounded-2xl border-t-3 border-t-orange-300  dark:bg-zinc-700 *:hover:text-orange-300 invisible opacity-0 group-hover:opacity-100 group-hover:visible top-full transition-all ">
            <a href="">قهوه ویژه</a>
            <a href="">ویژه در سطح جهانی</a>
            <a href="">قهوه درجه یک</a>
@@ -89,13 +89,19 @@
             <!-- cart box show -->
              <div class="absolute 
              group-hover:opacity-100 group-hover:visible
+             overflow-auto
+             max-h-[400px]
              top-full
-             
-             w-[400px]
+            invisible
+            opacity-0
+            w-[400px]
              p-5
+             delay-75
              left-0
              dark:text-white
              bg-white rounded-2xl border-t-3 border-t-orange-300 
+             transition-all
+            
              dark:bg-zinc-700">
             <!-- header Cart -->
             <div class="flex justify-between items-center font-DanaMedium tracking-normaling">
@@ -107,20 +113,76 @@
                 </svg>
               </div>
             </div>
-            <!-- cart body -->
-              <div class="wrapper-cart font-DanaMedium flex gap-x-2.5 mt-5">
-                <img src="./imges/products/p1.png" class="h-30 w-30" alt="">
-                <div class="flex flex-col justify-between">
-                  <h4 class=" text-zinc-700 text-base dark:text-white">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
-                  <div>
-                    <span class="text-teal-600 dark:text-teal-500 text-xs">14.500 تومان تخفیف</span>
-                    <div class="font-DanaDemiBold text-gray-700 dark:text-white ">
-                      175,000 
-                      <span class="text-sm"> تومان</span>
-                    </div>
+            <!-- cart wrapper body -->
+             <div class="*:py-5 border-b border-b-gray-300 dark:border-white/10  divide  divide-[#D1D5DB] dark:divide-white/10 pb-1">
+               <!-- cart body -->
+               <div class=" font-DanaMedium flex gap-x-2.5 ">
+                 <img src="./imges/products/p1.png" class="h-30 w-30" alt="">
+                 <div class="flex flex-col justify-between">
+                   <h4 class=" text-zinc-700 text-base dark:text-white line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                   <div>
+                     <span class="text-teal-600 dark:text-teal-500 text-xs tracking-tighter ">14.500 تومان تخفیف</span>
+                     <div class="font-DanaDemiBold text-gray-700 dark:text-white ">
+                       175,000 
+                       <span class="text-sm"> تومان</span>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class=" font-DanaMedium flex gap-x-2.5 ">
+                 <img src="./imges/products/p1.png" class="h-30 w-30" alt="">
+                 <div class="flex flex-col justify-between">
+                   <h4 class=" text-zinc-700 text-base dark:text-white line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                   <div>
+                     <span class="text-teal-600 dark:text-teal-500 text-xs tracking-tighter ">14.500 تومان تخفیف</span>
+                     <div class="font-DanaDemiBold text-gray-700 dark:text-white ">
+                       175,000 
+                       <span class="text-sm"> تومان</span>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class=" font-DanaMedium flex gap-x-2.5 ">
+                 <img src="./imges/products/p1.png" class="h-30 w-30" alt="">
+                 <div class="flex flex-col justify-between">
+                   <h4 class=" text-zinc-700 text-base dark:text-white line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                   <div>
+                     <span class="text-teal-600 dark:text-teal-500 text-xs tracking-tighter ">14.500 تومان تخفیف</span>
+                     <div class="font-DanaDemiBold text-gray-700 dark:text-white ">
+                       175,000 
+                       <span class="text-sm"> تومان</span>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class=" font-DanaMedium flex gap-x-2.5 ">
+                 <img src="./imges/products/p1.png" class="h-30 w-30" alt="">
+                 <div class="flex flex-col justify-between">
+                   <h4 class=" text-zinc-700 text-base dark:text-white line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                   <div>
+                     <span class="text-teal-600 dark:text-teal-500 text-xs tracking-tighter ">14.500 تومان تخفیف</span>
+                     <div class="font-DanaDemiBold text-gray-700 dark:text-white ">
+                       175,000 
+                       <span class="text-sm"> تومان</span>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+             </div>
+              <!-- Cart Footer -->
+               <div class="flex justify-between mt-5 items-center">
+                <div class="font-DanaMedium">
+                  <p class="text-[#D1D5DB] text-xs">مبلغ قابل پرداخت</p>
+                  <div class="text-sm  text-zinc-700 dark:text-white mt-0.5">
+                    350,000 
+                    <span>تومان </span>
                   </div>
                 </div>
-              </div>
+                <div>
+                  <button type="submit  " class="text-xl text-white   bg-teal-600 rounded-xl w-[144px] h-14 flex justify-center items-center">ثبت سفارش</button>
+                </div>
+               </div>
             </div>
            </div>
            <!-- theme btn  -->
