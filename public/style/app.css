@@ -535,6 +535,15 @@
   .max-h-10 {
     max-height: calc(var(--spacing) * 10);
   }
+  .max-h-50 {
+    max-height: calc(var(--spacing) * 50);
+  }
+  .max-h-\[50vh\] {
+    max-height: 50vh;
+  }
+  .max-h-\[50vhو\] {
+    max-height: 50vhو;
+  }
   .max-h-\[300px\] {
     max-height: 300px;
   }
@@ -570,6 +579,12 @@
   }
   .w-\[90\%\] {
     width: 90%;
+  }
+  .w-\[98p\%\] {
+    width: 98p%;
+  }
+  .w-\[98px\] {
+    width: 98px;
   }
   .w-\[144px\] {
     width: 144px;
@@ -609,6 +624,9 @@
   }
   .shrink {
     flex-shrink: 1;
+  }
+  .shrink-0 {
+    flex-shrink: 0;
   }
   .flex-grow {
     flex-grow: 1;
@@ -989,6 +1007,9 @@
   }
   .gap-x-2\.5 {
     column-gap: calc(var(--spacing) * 2.5);
+  }
+  .gap-x-4 {
+    column-gap: calc(var(--spacing) * 4);
   }
   .gap-x-5 {
     column-gap: calc(var(--spacing) * 5);
@@ -1442,6 +1463,12 @@
   }
   .p-9 {
     padding: calc(var(--spacing) * 9);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
@@ -2163,6 +2190,51 @@
           transition-duration: var(--tw-duration, var(--default-transition-duration));
         }
       }
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
+  .md\:gap-x-10 {
+    @media (width >= 48rem) {
+      column-gap: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:w-\[90\%\] {
+    @media (width >= 64rem) {
+      width: 90%;
+    }
+  }
+  .lg\:gap-x-5 {
+    @media (width >= 64rem) {
+      column-gap: calc(var(--spacing) * 5);
+    }
+  }
+  .lg\:gap-x-9 {
+    @media (width >= 64rem) {
+      column-gap: calc(var(--spacing) * 9);
+    }
+  }
+  .lg\:gap-x-10 {
+    @media (width >= 64rem) {
+      column-gap: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:px-10 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 10);
+    }
+  }
+  .xl\:inline-block {
+    @media (width >= 80rem) {
+      display: inline-block;
+    }
+  }
+  .xl\:gap-x-10 {
+    @media (width >= 80rem) {
+      column-gap: calc(var(--spacing) * 10);
     }
   }
   .dark\:hidden {

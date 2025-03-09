@@ -43,16 +43,21 @@
       <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
     </svg>
   </symbol>
+  <symbol>
+    <svg id="bars-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>    
+  </symbol>
 </svg>
-<header class="w-[90%] h-24 bg-black/50 mx-auto rounded-3xl flex items-center px-10 fixed top-9 right-0 left-0">
+<header class="w-[98p%] lg:w-[90%] h-24 bg-black/50 mx-auto rounded-3xl flex items-center px-5 lg:px-10 fixed top-9 right-0 left-0 hidden md:flex">
   <div class="flex justify-between w-full items-center">
     <!-- logo & Menu -->
-    <nav class="flex gap-x-9 items-center h-14"> 
+    <nav class="flex gap-x-5 lg:gap-x-9 items-center h-14"> 
       <div>
-        <img src="./imges/app-logo.png" alt="">
+        <img src="./imges/app-logo.png" alt="" class="shrink-0">
       </div> 
       <!-- menu -->
-      <ul class="tracking-[-0.065em] flex gap-x-9 text-xl text-gray-300 h-full *:leading-[56px]">
+      <ul class="tracking-[-0.065em] flex gap-x-4 lg:gap-x-9 text-xl text-gray-300 h-full *:leading-[56px]">
         <li><a href="" class="font-DanaDemiBold text-orange-200">صفحه اصلی</a></li>
         <!-- Wrraper SubMenus -->
         <li class="relative group">
@@ -74,10 +79,10 @@
         <li><a href="">تماس با ما</a></li>
       </ul>
     </nav>
-    <!-- Cart & theme & login &  -->
-      <div class="flex  text-orange-200 text-xl gap-x-10">
+    <!-- Cart & theme & login-->
+      <div class="flex  text-orange-200 text-xl gap-x-4 lg:gap-x-5 xl:gap-x-10">
         <!--  theme & swich Btn -->
-         <div class="flex gap-x-5 items-center">
+         <div class="flex gap-x-4 lg:gap-x-5 items-center">
            <!-- cart -->
            <div class="relative group">
             <!-- cart hover -->
@@ -90,7 +95,7 @@
              <div class="absolute 
              group-hover:opacity-100 group-hover:visible
              overflow-auto
-             max-h-[400px]
+             max-h-[50vh]
              top-full
             invisible
             opacity-0
@@ -185,8 +190,7 @@
                </div>
             </div>
            </div>
-           <!-- theme btn  -->
-
+           <!-- theme btn & moon btn    -->
            <div id="toggle-theme">
              <svg class="w-8 h-8 inline-block dark:hidden" >
                <use href="#moon" ></use>
@@ -203,12 +207,12 @@
           <svg class="w-8 h-8">
             <use href="#arrow"></use>
           </svg>
-          تماس با ما 
+          <span class="hidden xl:inline-block">ورود  | ثبت نام </span>
         </a>
       </div>
   </div>
 </header>
-
+<!-- Header mobile  -->
 
 <script src="./js/main.js"></script>    
 </body>
