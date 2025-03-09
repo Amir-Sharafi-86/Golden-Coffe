@@ -49,6 +49,11 @@
     </svg>    
   </symbol>
   <symbol>
+    <svg id="x-mark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+    </svg>        
+  </symbol>
+  <symbol>
    
    
     <svg id="logo-type" xmlns="http://www.w3.org/2000/svg" width="138" height="55" viewBox="0 0 138 55" fill="none">
@@ -66,7 +71,7 @@
       </svg>
   </symbol>
 </svg>
-<header class="w-[98%] lg:w-[90%] h-24 bg-black/50 mx-auto rounded-3xl flex items-center px-5 lg:px-10 fixed top-9 right-0 left-0 hidden md:flex">
+<header class="z-20 w-[98%] lg:w-[90%] h-24 bg-black/50 mx-auto rounded-3xl flex items-center px-5 lg:px-10 fixed top-9 right-0 left-0 hidden md:flex">
   <div class="flex justify-between w-full items-center">
     <!-- logo & Menu -->
     <nav class="flex gap-x-5 lg:gap-x-9 items-center h-14"> 
@@ -239,6 +244,60 @@
       <use href="#bars-3"></use>
     </svg>
   </div>
+  <!-- menu toggle -->
+  <div class="w-64 min-h-screen bg-white dark:bg-zinc-700 fixed top-0 right-0 bottom-0 z-20 pt-3 px-3 md:hidden ">
+    <div class="flex justify-between items-center  pb-5 border-b border-b-[#F3F4F6] dark:border-b-white/10 mb-6 ">
+      <div class="flex gap-x-2.5">
+        <img src="./imges/app-logo.png" alt="" class="size-[52px]" >
+        <svg class="w-[138px] h-[55px]">
+          <use href="#logo-type"></use>
+        </svg>
+      </div>
+
+      
+      <div>
+        <svg class="w-5 h-5  text-zinc-600 dark:text-white">
+          <use href="#x-mark"></use>
+        </svg>
+      </div>
+    </div>
+
+
+      <div class="pt-8 border-t border-b-[#F3F4F6] dark:border-t-white/10 mt-8">
+        
+        <div class="text-orange-300 space-y-6">
+          <div>
+            <a href="" class="flex gap-x-2 items-center"> 
+              <svg class="size-6">
+                <use href="#arrow"></use>
+              </svg>
+              <span>ورود  |  ثبت‌ نام</span>
+            </a>
+          </div>
+          <div>
+            <a href="" class="flex gap-x-2 items-center"> 
+              <svg class="size-6">
+                <use href="#sun"></use>
+              </svg>
+              <span>تم روشن</span>
+            </a>
+          </div>
+          <div>
+            <a href="" class="flex gap-x-2 items-center"> 
+              <svg class="size-6">
+                <use href="#shopping-cart"></use>
+              </svg>
+              <span>سبد خرید</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+  </div>
+
   <!-- logo type -->
   <div>
     <svg class="w-[138px] h-[55px]">
@@ -254,6 +313,7 @@
   
 </div>
 
+<div class="overlay bg-black/40 fixed inset-0 size-full z-10 md:hidden"></div>
 <script src="./js/main.js"></script>    
 </body>
 </html>
