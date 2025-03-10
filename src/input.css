@@ -45,6 +45,15 @@
         background-size: cover;
     }
 }
+@layer components {
+    .Submenu {
+        @apply hidden flex flex-col gap-y-3 pr-7 mt-3 text-sm text-[#52525B] dark:text-white
+    }
+    .Submenu-open {
+        @apply flex 
+        
+    }
+}
 
 @custom-variant dark (&:where(.dark, .dark *));
 

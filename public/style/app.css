@@ -267,6 +267,9 @@
   .top-full {
     top: 100%;
   }
+  .-right-64 {
+    right: calc(var(--spacing) * -64);
+  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
@@ -418,9 +421,6 @@
   }
   .mt-0\.5 {
     margin-top: calc(var(--spacing) * 0.5);
-  }
-  .mt-1 {
-    margin-top: calc(var(--spacing) * 1);
   }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
@@ -1716,9 +1716,6 @@
   .text-orange-300 {
     color: var(--color-orange-300);
   }
-  .text-red-500 {
-    color: var(--color-red-500);
-  }
   .text-teal-600 {
     color: var(--color-teal-600);
   }
@@ -2347,6 +2344,25 @@
     background-image: url("../imges/headerBgDesktop.webp");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+@layer components {
+  .Submenu {
+    margin-top: calc(var(--spacing) * 3);
+    display: flex;
+    display: none;
+    flex-direction: column;
+    row-gap: calc(var(--spacing) * 3);
+    padding-right: calc(var(--spacing) * 7);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    color: #52525B;
+    &:where(.dark, .dark *) {
+      color: var(--color-white);
+    }
+  }
+  .Submenu-open {
+    display: flex;
   }
 }
 @property --tw-translate-x {
