@@ -1,4 +1,4 @@
-const toggleThemeBtn = document.querySelector(".toggle-theme");
+const toggleThemeBtn = document.querySelector("#toggle-theme");
 const subMenuBtn = document.getElementById("subMenuOpen-btn");
 const subMenu = document.querySelector(".Submenu");
 const navicon = document.querySelector(".nav-icon");

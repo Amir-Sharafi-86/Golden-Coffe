@@ -6,13 +6,6 @@
     <title>Golden Coffe </title>
     <link rel="stylesheet" href="style/app.css">
     <link rel="icon" href="./imges/app-logo.png">
-    <script type="script">
-      document.documentElement.classList.toggle(
-  "dark",
-  localStorage.theme === "dark" ||
-    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
-);
-    </script>
 </head>
 <body class="font-Dana bg-gray-100 dark:bg-zinc-800  backdrop:blur-[6px]  ">
 <!-- Svg All app -->
@@ -21,6 +14,11 @@
     <svg id="chevron-downn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
       <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
     </svg>       
+  </symbol>
+  <symbol>
+    <svg id="cuvren" xmlns="http://www.w3.org/2000/svg" width="100" height="22" viewBox="0 0 100 22" fill="none">
+      <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" fill="#F3F4F6"/>
+      </svg>       
   </symbol>
   <symbol>
     <svg id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -254,7 +252,7 @@
             </div>
            </div>
            <!-- theme btn & moon btn    -->
-           <div id="toggle-theme">
+           <div id="toggle-theme" class=" cursor-pointer">
              <svg class="w-8 h-8 inline-block dark:hidden" >
                <use href="#moon" ></use>
              </svg>
@@ -437,15 +435,30 @@
 
 
 <main>
-    <section class="home bg-home-mobile md:bg-home  bg-[center_top] ">
+    <section class="relative home h-[200px]  xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-home-mobile md:bg-home  bg-[center_top] mb-[30rem]  ">
       <div class="container flex justify-end items-center h-full md:min-h-screen  ">
         <div class="text-white ">
           <h1 class="font-MorabbaBold  text-2xl md:text-6xl mb-0.5 md:mb-2">قهوه عربیکا تانزانیا</h1>
           <h4 class="text-xl md:text-5xl  font-MorabbaLight">یک فنجان بالانس !</h4>
           <span class="w-25 h-px md:h-0.5 bg-orange-300 block my-3 md:my-8"></span>
-          <p class=" text-xs md:text-base mt-[66px] max-w-[206px] md:max-w-[436px] font-MorabbaLight">قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</p>
+          <p class=" text-xs md:text-2xl  max-w-[206px] md:max-w-[436px] font-MorabbaLight">قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</p>
         </div>
       </div>
+      <!-- svg absolute -->
+      <div>
+        <svg class="  absolute text-gray-100 dark:text-zinc-800    w-[100px] h-[22px] bottom-0 right-0 left-0 mx-auto">
+          <use href="#cuvren"></use>
+        </svg>
+      </div>
+     <div class="size-7.5 border-2 border-[#FDBA74] rounded-full flex justify-center items-center  absolute right-0 left-0 mx-auto 
+     -bottom-[1rem]
+     ">
+        <svg class="size-5 text-zinc-700 dark:text-white  ">
+          <use href="#chevron-downn"></use>
+        </svg>
+     </div>
+
+
     </section>
 </main>
 
