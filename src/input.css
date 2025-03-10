@@ -14,10 +14,17 @@
  --font-Dana : "Dana";
  --font-DanaMedium : "Dana Medium";
  --font-DanaDemiBold : "Dana DemiBold";
+ --font-MorabbaLight : "Morabba Light";
+ --font-MorabbaBold : "Morabba Bold";
+ --font-MorabbaMedium : "Morabba Medium";
 
     --breakpoint-xs : "480px";
 
     --tracking-normaling : "-0.065em";
+
+    --breakpoint-xs:480px;
+    
+    
 }
 
 @utility container {
@@ -36,11 +43,28 @@
         font-family: "Dana DemiBold";
         src: url("../fonts/Dana/woff2/DanaFaNum-DemiBold.woff2");
     }
+    @font-face {
+        font-family: "Morabba Light";
+        src: url("../fonts/Morabba/woff2/Morabba-Light.woff2");
+    }
+    @font-face {
+        font-family: "Morabba Bold";
+        src: url("../fonts/Morabba/woff2/Morabba-Bold.woff2");
+    }
+    @font-face {
+        font-family: "Morabba Medium";
+        src: url("../fonts/Morabba/woff2/Morabba-Medium.woff2");
+    }
 }
 
 @layer utilities {
     .bg-home {
         background-image: url("../imges/headerBgDesktop.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bg-home-mobile {
+        background-image: url("../imges/headerBgMobile.webp");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -60,6 +84,7 @@
         @apply visible opacity-100;
     }
 }
+
 
 @custom-variant dark (&:where(.dark, .dark *));
 

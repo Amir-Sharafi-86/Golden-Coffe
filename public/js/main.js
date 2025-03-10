@@ -28,10 +28,14 @@ navicon.addEventListener("click" , function() {
     nav.classList.remove("-right-64")
     nav.classList.add("right-0")
     overlay.classList.add("overlay-show")
-    
 })
 
 closeBtn.addEventListener("click" , function() {
+    nav.classList.remove("right-0")
+    nav.classList.add("-right-64")
+    overlay.classList.remove("overlay-show")
+})
+overlay.addEventListener("click" , function() {
     nav.classList.remove("right-0")
     nav.classList.add("-right-64")
     overlay.classList.remove("overlay-show")
