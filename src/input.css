@@ -53,6 +53,12 @@
         @apply flex 
         
     }
+    .overlay {
+        @apply  bg-black/40 fixed inset-0 size-full z-10 md:hidden invisible opacity-0;
+    }
+    .overlay-show {
+        @apply visible opacity-100;
+    }
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

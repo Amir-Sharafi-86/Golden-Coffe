@@ -279,13 +279,13 @@
 <!-- Header mobile  -->
 <div class="flex md:hidden justify-between items-center px-5 h-16 bg-white dark:bg-zinc-700 ">
   <!-- Menu icon -->
-  <div class="nav-icon">
+  <div class="nav-icon cursor-pointer">
     <svg class="w-6 h-6 text-zinc-700 dark:text-white ">
       <use href="#bars-3"></use>
     </svg>
   </div>
   <!-- menu toggle -->
-  <div class="w-64 min-h-screen -right-64 bg-white dark:bg-zinc-700 fixed top-0  bottom-0 z-20 pt-3 px-3 md:hidden ">
+  <div class=" nav w-64 min-h-screen -right-64 bg-white dark:bg-zinc-700 fixed top-0  bottom-0 z-20 pt-3 px-3 md:hidden  transition-all">
     <!-- menu header -->
     <div class="flex justify-between items-center  pb-5 border-b border-b-[#F3F4F6] dark:border-b-white/10 mb-6 ">
       <div class="flex gap-x-2.5">
@@ -296,7 +296,7 @@
       </div>
 
       
-      <div>
+      <div class="x-mark cursor-pointer">
         <svg class="w-5 h-5  text-zinc-600 dark:text-white">
           <use href="#x-mark"></use>
         </svg>
@@ -435,7 +435,7 @@
   
 </div>
 
-<div class="overlay bg-black/40 fixed inset-0 size-full z-10 hidden"></div>
+<div class="overlay "></div>
 <script src="./js/main.js"></script>    
 </body>
 </html>
