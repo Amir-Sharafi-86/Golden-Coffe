@@ -7,7 +7,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
-    --color-red-700: oklch(0.505 0.213 27.518);
     --color-orange-200: oklch(0.901 0.076 70.697);
     --color-orange-300: oklch(0.837 0.128 66.29);
     --color-teal-500: oklch(0.704 0.14 182.503);
@@ -27,10 +26,14 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
@@ -62,6 +65,7 @@
     --font-DanaDemiBold: "Dana DemiBold";
     --font-MorabbaLight: "Morabba Light";
     --font-MorabbaBold: "Morabba Bold";
+    --font-MorabbaMedium: "Morabba Medium";
     --tracking-normaling: "-0.065em";
   }
 }
@@ -597,6 +601,9 @@
   .h-\[200px\] {
     height: 200px;
   }
+  .h-\[467px\] {
+    height: 467px;
+  }
   .h-full {
     height: 100%;
   }
@@ -632,6 +639,9 @@
   }
   .w-8 {
     width: calc(var(--spacing) * 8);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
   }
   .w-25 {
     width: calc(var(--spacing) * 25);
@@ -907,6 +917,9 @@
   }
   .auto-rows-min {
     grid-auto-rows: min-content;
+  }
+  .grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
   .grid-cols-none {
     grid-template-columns: none;
@@ -1579,6 +1592,12 @@
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
   }
+  .pt-44 {
+    padding-top: calc(var(--spacing) * 44);
+  }
+  .pt-48 {
+    padding-top: calc(var(--spacing) * 48);
+  }
   .pr-0 {
     padding-right: calc(var(--spacing) * 0);
   }
@@ -1645,13 +1664,24 @@
   .font-MorabbaLight {
     font-family: var(--font-MorabbaLight);
   }
+  .font-MorabbaMedium {
+    font-family: var(--font-MorabbaMedium);
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
   .text-sm {
     font-size: var(--text-sm);
@@ -1774,9 +1804,6 @@
   }
   .text-orange-300 {
     color: var(--color-orange-300);
-  }
-  .text-red-700 {
-    color: var(--color-red-700);
   }
   .text-teal-600 {
     color: var(--color-teal-600);
@@ -2309,6 +2336,11 @@
       margin-block: calc(var(--spacing) * 8);
     }
   }
+  .md\:mb-1\.5 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 1.5);
+    }
+  }
   .md\:mb-2 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 2);
@@ -2344,10 +2376,21 @@
       max-width: 436px;
     }
   }
+  .md\:pt-24 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 24);
+    }
+  }
   .md\:text-2xl {
     @media (width >= 48rem) {
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .md\:text-3xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
   .md\:text-5xl {
@@ -2360,6 +2403,12 @@
     @media (width >= 48rem) {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .md\:text-xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .lg\:w-\[90\%\] {
@@ -2380,6 +2429,11 @@
   .lg\:px-10 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:pt-48 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 48);
     }
   }
   .xl\:inline-block {
