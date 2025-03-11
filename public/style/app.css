@@ -721,6 +721,9 @@
   .w-\[400px\] {
     width: 400px;
   }
+  .w-auto {
+    width: auto;
+  }
   .w-full {
     width: 100%;
   }
@@ -738,6 +741,9 @@
   }
   .max-w-screen {
     max-width: 100vw;
+  }
+  .min-w-\[168px\] {
+    min-width: 168px;
   }
   .min-w-\[172px\] {
     min-width: 172px;
@@ -1134,6 +1140,9 @@
   .gap-3\.5 {
     gap: calc(var(--spacing) * 3.5);
   }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
   .space-y-4 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -1161,6 +1170,9 @@
   }
   .gap-x-3 {
     column-gap: calc(var(--spacing) * 3);
+  }
+  .gap-x-3\.5 {
+    column-gap: calc(var(--spacing) * 3.5);
   }
   .gap-x-4 {
     column-gap: calc(var(--spacing) * 4);
@@ -1666,6 +1678,9 @@
   }
   .px-1 {
     padding-inline: calc(var(--spacing) * 1);
+  }
+  .px-1\.5 {
+    padding-inline: calc(var(--spacing) * 1.5);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -2478,6 +2493,11 @@
       }
     }
   }
+  .max-sm\:block {
+    @media (width < 40rem) {
+      display: block;
+    }
+  }
   .xs\:aspect-\[2\/1\] {
     @media (width >= 480px) {
       aspect-ratio: 2/1;
@@ -2486,6 +2506,31 @@
   .xs\:h-auto {
     @media (width >= 480px) {
       height: auto;
+    }
+  }
+  .sm\:block {
+    @media (width >= 40rem) {
+      display: block;
+    }
+  }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
+    }
+  }
+  .sm\:h-3 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 3);
+    }
+  }
+  .sm\:w-3 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 3);
+    }
+  }
+  .sm\:min-w-0 {
+    @media (width >= 40rem) {
+      min-width: calc(var(--spacing) * 0);
     }
   }
   .sm\:grid-cols-3 {
@@ -2613,6 +2658,11 @@
       padding: calc(var(--spacing) * 5);
     }
   }
+  .md\:p-7 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 7);
+    }
+  }
   .md\:px-3 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 3);
@@ -2731,6 +2781,13 @@
   .xl\:gap-x-10 {
     @media (width >= 80rem) {
       column-gap: calc(var(--spacing) * 10);
+    }
+  }
+  .rtl\:space-x-reverse {
+    &:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) {
+      :where(& > :not(:last-child)) {
+        --tw-space-x-reverse: 1;
+      }
     }
   }
   .dark\:hidden {

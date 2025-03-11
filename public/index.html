@@ -477,42 +477,47 @@
         <!--  header product  -->
         <div class="flex justify-between items-end">
           <div class="">
-            <h2 class="text-zinc-700 text-2xl md:text-5xl font-MorabbaMedium mb-0.5 md:mb-1.5  dark:text-white">جدیدترین محصولات</h2>
+            <h2 class="text-zinc-700 text-2xl md:text-5xl font-MorabbaMedium mb-0.5 md:mb-1.5  dark:text-white whitespace-nowrap">جدیدترین محصولات</h2>
             <p class="text-lg md:text-3xl font-MorabbaLight text-zinc-700  dark:text-white">فرآوری شده از دانه قهوه</p>
           </div>
   
-          <div class="   flex justify-center items-center cursor-pointer">
+          <div class="  hidden sm:block flex justify-center items-center cursor-pointer">
             <p class="text-orange-300 text-sm md:text-xl hover:bg-orange-300/20  px-3 pt-1 h-10  transition-colors  rounded-md">مشاهده همه محصولات</p>
+          </div>
+          <div class="  max-sm:block flex justify-center items-center cursor-pointer">
+            <p class="text-orange-300 text-sm md:text-xl hover:bg-orange-300/20  px-3 pt-1 h-10  transition-colors  rounded-md">مشاهده همه </p>
           </div>
         </div>
 
-       
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5 mt-12">
-          <div class="bg-white dark:bg-zinc-700 p-2 md:p-5 rounded-2xl  min-w-[172px] px-1">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4  gap-3.5 md:gap-5  mt-12">
+          <div class="bg-white dark:bg-zinc-700  p-2 md:p-5  rounded-2xl">
             <!-- img content  -->
-            <div class="relative mb-2 md:mb-5">
+            <div class="relative  mb-2 md:mb-5 ">
               <img src="./imges/products/p1.png" class="w-32 md:w-auto" alt="">
-              <span class="absolute inline-block bg-orange-300 rounded-full px-2.5 md:px-3 h-5 md:h-7.5 font-DanaMedium text-white dark:text-zinc-700 text-xs/[24px] md:text-base/[34px] top-1.5 right-1.5">12%</span>
+              <span class="  absolute  inline-block   bg-orange-300 rounded-full  px-2.5 md:px-3 h-5 md:h-7.5  font-DanaMedium  text-white dark:text-zinc-700 text-xs/[24px]   md:text-base/[34px] top-1.5 right-1.5">12%</span>
             </div>
             <!-- content main  -->
-            <div class="text-zinc-700 dark:text-white text-sm md:text-xl font-DanaMedium line-clamp-2">
-              <h5>قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی</h5>
+            <div class="text-zinc-700 dark:text-white text-sm md:text-xl  font-DanaMedium  line-clamp-2">
+              <h5>قهوه ترک بن مانو مقدار 250 گرم
+                خط دوم اسم طولانی</h5>
             </div>
             <!-- product -->
-            <div class="flex gap-x-2.5 items-end mt-1.5 md:mt-2.5 whitespace-nowrap ">
-              <div class="text-teal-600 dark:text-emerald-500">
-                <span class="text-base md:text-xl font-DanaDemiBold">154000</span>
+            <div class="flex  gap-x-2.5 items-end mt-1.5 md:mt-2.5">
+              <div class=" text-center whitespace-nowrap text-teal-600 dark:text-emerald-500">
+                <span class=" text-base md:text-xl font-DanaDemiBold">154000</span>
                 <span class="text-xs md:text-sm tracking-tighter">تومان </span>
               </div>
               <div class="text-[#9CA3AF] mt-1.5">
-                <span class="text-xl line-through decoration-red-500">175000</span>
+                
                 <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
               </div>
             </div>
-            <div class="flex items-center justify-between mt-4">
+
+            <div class="flex items-center  justify-between mt-4">
+
               <div class="flex gap-x-3 items-center">
-                <div class="size-9 bg-gray-100 dark:bg-zinc-800 rounded-full flex justify-center items-center dark:hover:bg-emerald-500 cursor-pointer transition-colors">
-                  <svg class="size-6 text-gray-400 transition-all">
+                <div class=" size-9 bg-gray-100 dark:bg-zinc-800 rounded-full flex justify-center items-center dark:hover:bg-emerald-500 cursor-pointer transition-colors">
+                  <svg class="size-6 text-gray-400 transition-all ">
                     <use href="#shopping-cart"></use>
                   </svg>
                 </div>
@@ -522,33 +527,370 @@
                 <div>
                 </div>
               </div>
-              <!-- star  -->
-              <div class="flex  text-yellow-400">
-                <svg class="w-4 h-4 md:w-6 md:h-6">
+            <!-- star  -->
+              <div class="flex  text-yellow-400 text-gray-300">
+                <svg class="size-4 md:size-6 text-gray-300 " style="border-radius: 1.5px solid yellow;">
                   <use href="#star"></use>
                 </svg>
-                <svg class="w-4 h-4 md:w-6 md:h-6">
-                  <use href="#star"></use>
-                </svg>
-                <svg class="w-4 h-4 md:w-6 md:h-6">
-                  <use href="#star"></use>
-                </svg>
-                <svg class="w-4 h-4 md:w-6 md:h-6">
-                  <use href="#star"></use>
-                </svg>
-                <svg class="w-4 h-4 md:w-6 md:h-6">
+                <svg class="size-4 md:size-6">
                   <use href="#star"></use>
                 </svg>
               </div>
+
             </div>
+
+          </div>
+          <div class="bg-white dark:bg-zinc-700  p-2 md:p-5  rounded-2xl">
+            <!-- img content  -->
+            <div class="relative  mb-2 md:mb-5 ">
+              <img src="./imges/products/p2.png" class="w-32 md:w-auto" alt="">
+              <span class="  absolute  inline-block   bg-orange-300 rounded-full  px-2.5 md:px-3 h-5 md:h-7.5  font-DanaMedium  text-white dark:text-zinc-700 text-xs/[24px]   md:text-base/[34px] top-1.5 right-1.5">12%</span>
+            </div>
+            <!-- content main  -->
+            <div class="text-zinc-700 dark:text-white text-sm md:text-xl  font-DanaMedium  line-clamp-2">
+              <h5>قهوه ترک بن مانو مقدار 250 گرم
+                خط دوم اسم طولانی</h5>
+            </div>
+            <!-- product -->
+            <div class="flex  gap-x-2.5 items-end mt-1.5 md:mt-2.5">
+              <div class=" text-center whitespace-nowrap text-teal-600 dark:text-emerald-500">
+                <span class=" text-base md:text-xl font-DanaDemiBold">154000</span>
+                <span class="text-xs md:text-sm tracking-tighter">تومان </span>
+              </div>
+              <div class="text-[#9CA3AF] mt-1.5">
+                
+                <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+              </div>
+            </div>
+
+            <div class="flex items-center  justify-between mt-4">
+
+              <div class="flex gap-x-3 items-center">
+                <div class=" size-9 bg-gray-100 dark:bg-zinc-800 rounded-full flex justify-center items-center dark:hover:bg-emerald-500 cursor-pointer transition-colors">
+                  <svg class="size-6 text-gray-400 transition-all ">
+                    <use href="#shopping-cart"></use>
+                  </svg>
+                </div>
+                <svg class="size-6 text-[#9CA3AF]">
+                  <use href="#arrow-right-left"></use>
+                </svg>
+                <div>
+                </div>
+              </div>
+            <!-- star  -->
+              <div class="flex  text-yellow-400 text-gray-300">
+                <svg class="size-4 md:size-6 text-gray-300 " style="border-radius: 1.5px solid yellow;">
+                  <use href="#star"></use>
+                </svg>
+                <svg class="size-4 md:size-6">
+                  <use href="#star"></use>
+                </svg>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="bg-white dark:bg-zinc-700  p-2 md:p-5  rounded-2xl">
+            <!-- img content  -->
+            <div class="relative  mb-2 md:mb-5 ">
+              <img src="./imges/products/p3.png" class="w-32 md:w-auto" alt="">
+              <span class="  absolute  inline-block   bg-orange-300 rounded-full  px-2.5 md:px-3 h-5 md:h-7.5  font-DanaMedium  text-white dark:text-zinc-700 text-xs/[24px]   md:text-base/[34px] top-1.5 right-1.5">12%</span>
+            </div>
+            <!-- content main  -->
+            <div class="text-zinc-700 dark:text-white text-sm md:text-xl  font-DanaMedium  line-clamp-2">
+              <h5>قهوه ترک بن مانو مقدار 250 گرم
+                خط دوم اسم طولانی</h5>
+            </div>
+            <!-- product -->
+            <div class="flex  gap-x-2.5 items-end mt-1.5 md:mt-2.5">
+              <div class=" text-center whitespace-nowrap text-teal-600 dark:text-emerald-500">
+                <span class=" text-base md:text-xl font-DanaDemiBold">154000</span>
+                <span class="text-xs md:text-sm tracking-tighter">تومان </span>
+              </div>
+              <div class="text-[#9CA3AF] mt-1.5">
+                
+                <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+              </div>
+            </div>
+
+            <div class="flex items-center  justify-between mt-4">
+
+              <div class="flex gap-x-3 items-center">
+                <div class=" size-9 bg-gray-100 dark:bg-zinc-800 rounded-full flex justify-center items-center dark:hover:bg-emerald-500 cursor-pointer transition-colors">
+                  <svg class="size-6 text-gray-400 transition-all ">
+                    <use href="#shopping-cart"></use>
+                  </svg>
+                </div>
+                <svg class="size-6 text-[#9CA3AF]">
+                  <use href="#arrow-right-left"></use>
+                </svg>
+                <div>
+                </div>
+              </div>
+            <!-- star  -->
+              <div class="flex  text-yellow-400 text-gray-300">
+                <svg class="size-4 md:size-6 text-gray-300 " style="border-radius: 1.5px solid yellow;">
+                  <use href="#star"></use>
+                </svg>
+                <svg class="size-4 md:size-6">
+                  <use href="#star"></use>
+                </svg>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="bg-white dark:bg-zinc-700  p-2 md:p-5  rounded-2xl">
+            <!-- img content  -->
+            <div class="relative  mb-2 md:mb-5 ">
+              <img src="./imges/products/p4.png" class="w-32 md:w-auto" alt="">
+              <span class="  absolute  inline-block   bg-orange-300 rounded-full  px-2.5 md:px-3 h-5 md:h-7.5  font-DanaMedium  text-white dark:text-zinc-700 text-xs/[24px]   md:text-base/[34px] top-1.5 right-1.5">12%</span>
+            </div>
+            <!-- content main  -->
+            <div class="text-zinc-700 dark:text-white text-sm md:text-xl  font-DanaMedium  line-clamp-2">
+              <h5>قهوه ترک بن مانو مقدار 250 گرم
+                خط دوم اسم طولانی</h5>
+            </div>
+            <!-- product -->
+            <div class="flex  gap-x-2.5 items-end mt-1.5 md:mt-2.5">
+              <div class=" text-center whitespace-nowrap text-teal-600 dark:text-emerald-500">
+                <span class=" text-base md:text-xl font-DanaDemiBold">154000</span>
+                <span class="text-xs md:text-sm tracking-tighter">تومان </span>
+              </div>
+              <div class="text-[#9CA3AF] mt-1.5">
+                
+                <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+              </div>
+            </div>
+
+            <div class="flex items-center  justify-between mt-4">
+
+              <div class="flex gap-x-3 items-center">
+                <div class=" size-9 bg-gray-100 dark:bg-zinc-800 rounded-full flex justify-center items-center dark:hover:bg-emerald-500 cursor-pointer transition-colors">
+                  <svg class="size-6 text-gray-400 transition-all ">
+                    <use href="#shopping-cart"></use>
+                  </svg>
+                </div>
+                <svg class="size-6 text-[#9CA3AF]">
+                  <use href="#arrow-right-left"></use>
+                </svg>
+                <div>
+                </div>
+              </div>
+            <!-- star  -->
+              <div class="flex  text-yellow-400 text-gray-300">
+                <svg class="size-4 md:size-6 text-gray-300 " style="border-radius: 1.5px solid yellow;">
+                  <use href="#star"></use>
+                </svg>
+                <svg class="size-4 md:size-6">
+                  <use href="#star"></use>
+                </svg>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="bg-white dark:bg-zinc-700  p-2 md:p-5  rounded-2xl">
+            <!-- img content  -->
+            <div class="relative  mb-2 md:mb-5 ">
+              <img src="./imges/products/p5.png" class="w-32 md:w-auto" alt="">
+              <span class="  absolute  inline-block   bg-orange-300 rounded-full  px-2.5 md:px-3 h-5 md:h-7.5  font-DanaMedium  text-white dark:text-zinc-700 text-xs/[24px]   md:text-base/[34px] top-1.5 right-1.5">12%</span>
+            </div>
+            <!-- content main  -->
+            <div class="text-zinc-700 dark:text-white text-sm md:text-xl  font-DanaMedium  line-clamp-2">
+              <h5>قهوه ترک بن مانو مقدار 250 گرم
+                خط دوم اسم طولانی</h5>
+            </div>
+            <!-- product -->
+            <div class="flex  gap-x-2.5 items-end mt-1.5 md:mt-2.5">
+              <div class=" text-center whitespace-nowrap text-teal-600 dark:text-emerald-500">
+                <span class=" text-base md:text-xl font-DanaDemiBold">154000</span>
+                <span class="text-xs md:text-sm tracking-tighter">تومان </span>
+              </div>
+              <div class="text-[#9CA3AF] mt-1.5">
+                
+                <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+              </div>
+            </div>
+
+            <div class="flex items-center  justify-between mt-4">
+
+              <div class="flex gap-x-3 items-center">
+                <div class=" size-9 bg-gray-100 dark:bg-zinc-800 rounded-full flex justify-center items-center dark:hover:bg-emerald-500 cursor-pointer transition-colors">
+                  <svg class="size-6 text-gray-400 transition-all ">
+                    <use href="#shopping-cart"></use>
+                  </svg>
+                </div>
+                <svg class="size-6 text-[#9CA3AF]">
+                  <use href="#arrow-right-left"></use>
+                </svg>
+                <div>
+                </div>
+              </div>
+            <!-- star  -->
+              <div class="flex  text-yellow-400 text-gray-300">
+                <svg class="size-4 md:size-6 text-gray-300 " style="border-radius: 1.5px solid yellow;">
+                  <use href="#star"></use>
+                </svg>
+                <svg class="size-4 md:size-6">
+                  <use href="#star"></use>
+                </svg>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="bg-white dark:bg-zinc-700  p-2 md:p-5  rounded-2xl">
+            <!-- img content  -->
+            <div class="relative  mb-2 md:mb-5 ">
+              <img src="./imges/products/p6.png" class="w-32 md:w-auto" alt="">
+              <span class="  absolute  inline-block   bg-orange-300 rounded-full  px-2.5 md:px-3 h-5 md:h-7.5  font-DanaMedium  text-white dark:text-zinc-700 text-xs/[24px]   md:text-base/[34px] top-1.5 right-1.5">12%</span>
+            </div>
+            <!-- content main  -->
+            <div class="text-zinc-700 dark:text-white text-sm md:text-xl  font-DanaMedium  line-clamp-2">
+              <h5>قهوه ترک بن مانو مقدار 250 گرم
+                خط دوم اسم طولانی</h5>
+            </div>
+            <!-- product -->
+            <div class="flex  gap-x-2.5 items-end mt-1.5 md:mt-2.5">
+              <div class=" text-center whitespace-nowrap text-teal-600 dark:text-emerald-500">
+                <span class=" text-base md:text-xl font-DanaDemiBold">154000</span>
+                <span class="text-xs md:text-sm tracking-tighter">تومان </span>
+              </div>
+              <div class="text-[#9CA3AF] mt-1.5">
+                
+                <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+              </div>
+            </div>
+
+            <div class="flex items-center  justify-between mt-4">
+
+              <div class="flex gap-x-3 items-center">
+                <div class=" size-9 bg-gray-100 dark:bg-zinc-800 rounded-full flex justify-center items-center dark:hover:bg-emerald-500 cursor-pointer transition-colors">
+                  <svg class="size-6 text-gray-400 transition-all ">
+                    <use href="#shopping-cart"></use>
+                  </svg>
+                </div>
+                <svg class="size-6 text-[#9CA3AF]">
+                  <use href="#arrow-right-left"></use>
+                </svg>
+                <div>
+                </div>
+              </div>
+            <!-- star  -->
+              <div class="flex  text-yellow-400 text-gray-300">
+                <svg class="size-4 md:size-6 text-gray-300 " style="border-radius: 1.5px solid yellow;">
+                  <use href="#star"></use>
+                </svg>
+                <svg class="size-4 md:size-6">
+                  <use href="#star"></use>
+                </svg>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="bg-white dark:bg-zinc-700  p-2 md:p-5  rounded-2xl">
+            <!-- img content  -->
+            <div class="relative  mb-2 md:mb-5 ">
+              <img src="./imges/products/p8.png" class="w-32 md:w-auto" alt="">
+              <span class="  absolute  inline-block   bg-orange-300 rounded-full  px-2.5 md:px-3 h-5 md:h-7.5  font-DanaMedium  text-white dark:text-zinc-700 text-xs/[24px]   md:text-base/[34px] top-1.5 right-1.5">12%</span>
+            </div>
+            <!-- content main  -->
+            <div class="text-zinc-700 dark:text-white text-sm md:text-xl  font-DanaMedium  line-clamp-2">
+              <h5>قهوه ترک بن مانو مقدار 250 گرم
+                خط دوم اسم طولانی</h5>
+            </div>
+            <!-- product -->
+            <div class="flex  gap-x-2.5 items-end mt-1.5 md:mt-2.5">
+              <div class=" text-center whitespace-nowrap text-teal-600 dark:text-emerald-500">
+                <span class=" text-base md:text-xl font-DanaDemiBold">154000</span>
+                <span class="text-xs md:text-sm tracking-tighter">تومان </span>
+              </div>
+              <div class="text-[#9CA3AF] mt-1.5">
+                
+                <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+              </div>
+            </div>
+
+            <div class="flex items-center  justify-between mt-4">
+
+              <div class="flex gap-x-3 items-center">
+                <div class=" size-9 bg-gray-100 dark:bg-zinc-800 rounded-full flex justify-center items-center dark:hover:bg-emerald-500 cursor-pointer transition-colors">
+                  <svg class="size-6 text-gray-400 transition-all ">
+                    <use href="#shopping-cart"></use>
+                  </svg>
+                </div>
+                <svg class="size-6 text-[#9CA3AF]">
+                  <use href="#arrow-right-left"></use>
+                </svg>
+                <div>
+                </div>
+              </div>
+            <!-- star  -->
+              <div class="flex  text-yellow-400 ">
+                <svg class="size-4 md:size-6 text-gray-300 " style="border-radius: 1.5px solid yellow;">
+                  <use href="#star"></use>
+                </svg>
+                <svg class="size-4 md:size-6">
+                  <use href="#star"></use>
+                </svg>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="bg-white dark:bg-zinc-700  p-2  md:p-5  rounded-2xl">
+            <!-- img content  -->
+            <div class="relative  mb-2 md:mb-5 ">
+              <img src="./imges/products/p7.png" class="w-32 md:w-auto" alt="">
+              <span class="  absolute  inline-block   bg-orange-300 rounded-full  px-2.5 md:px-3 h-5 md:h-7.5  font-DanaMedium  text-white dark:text-zinc-700 text-xs/[24px]   md:text-base/[34px] top-1.5 right-1.5">12%</span>
+            </div>
+            <!-- content main  -->
+            <div class="text-zinc-700 dark:text-white text-sm md:text-xl  font-DanaMedium  line-clamp-2">
+              <h5>قهوه ترک بن مانو مقدار 250 گرم
+                خط دوم اسم طولانی</h5>
+            </div>
+            <!-- product -->
+            <div class="flex  gap-x-2.5 items-end mt-1.5 md:mt-2.5">
+              <div class=" text-center whitespace-nowrap text-teal-600 dark:text-emerald-500">
+                <span class=" text-base md:text-xl font-DanaDemiBold">154000</span>
+                <span class="text-xs md:text-sm tracking-tighter">تومان </span>
+              </div>
+              <div class="text-[#9CA3AF] mt-1.5">
+                
+                <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+              </div>
+            </div>
+
+            <div class="flex items-center  justify-between mt-4">
+
+              <div class="flex gap-x-3 items-center">
+                <div class=" size-9 bg-gray-100 dark:bg-zinc-800 rounded-full flex justify-center items-center dark:hover:bg-emerald-500 cursor-pointer transition-colors">
+                  <svg class="size-6 text-gray-400 transition-all ">
+                    <use href="#shopping-cart"></use>
+                  </svg>
+                </div>
+                <svg class="size-6 text-[#9CA3AF]">
+                  <use href="#arrow-right-left"></use>
+                </svg>
+                <div>
+                </div>
+              </div>
+            <!-- star  -->
+              <div class="flex  text-yellow-400 ">
+                <svg class="size-4 md:size-6 text-gray-300 " style="border-radius: 1.5px solid yellow;">
+                  <use href="#star"></use>
+                </svg>
+                <svg class="size-4 md:size-6">
+                  <use href="#star"></use>
+                </svg>
+              </div>
+
+            </div>
+
           </div>
         </div>
-        
-        
-        
-
-
-
 
       </div>
     </section>
