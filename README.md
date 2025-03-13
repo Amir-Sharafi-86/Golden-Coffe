@@ -1,4 +1,4 @@
-# this is a big project in TailwindCss and javascripts pure dom the focus of this project standard and omptimized code with latest teghnology Tailwind this project is designed with a basic ui and converted a code Sensitivity and precision are the first words in Ferrante.
+## this is a big project in TailwindCss and javascripts pure  the focus of this project standard and omptimized code with latest teghnology Tailwind this project is designed with a basic ui and converted a code Sensitivity and precision are the first words in Ferrante.
 
 # installation
 Npm run Tailwind
