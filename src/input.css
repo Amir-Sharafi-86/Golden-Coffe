@@ -83,6 +83,26 @@
     .overlay-show {
         @apply visible opacity-100;
     }
+
+    .categoty-items1 {
+        background: linear-gradient(rgba(0,0,0,0.6) 33.85% , rgba(246,246,246,0.1) 100%   ) , url("../imges/categories/category-left.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .categoty-items2 {
+        background: linear-gradient(rgba(0,0,0,0.6) 33.85% , rgba(246,246,246,0.1) 100%   ) , url("../imges/categories/category-right.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .club-wrapper {
+        background: linear-gradient(rgba(16, 185, 129, 1)  , rgba(5, 150, 105, 1));
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+
 }
 
 
