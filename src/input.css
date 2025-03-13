@@ -68,6 +68,10 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .rtl{
+        text-align: left;
+        direction: ltr;
+    }
 }
 @layer components {
     .Submenu {
