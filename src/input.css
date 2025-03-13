@@ -99,6 +99,28 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    @media screen and (max-width:620px) {
+        .services{
+            position: relative;
+        }
+        .services::after ,
+        .services::before {
+            content: "";
+            display: block;
+            background-color: #d1d5db;
+            margin: auto;
+            position: absolute;
+            inset: 0;
+        }
+        .services::after {
+            height: 100%;
+            width: 1px;
+        }
+        .services::before {
+            height: 1px;
+            width: 100%;
+        }
+    }
 
 
 
