@@ -1,21 +1,21 @@
 # Golden-Coffe Website
+# About project
+ this is a big project with TailwindCss and javascripts pure  the focus of this project standard and omptimized code with latest teghnology Tailwind this project is designed with a basic ui and converted a code Sensitivity and precision are the first words in Ferrante.
 
-## this is a big project with TailwindCss and javascripts pure  the focus of this project standard and omptimized code with latest teghnology Tailwind this project is designed with a basic ui and converted a code Sensitivity and precision are the first words in Ferrante.
-
-# installation
+## installation
 Npm run Tailwind
-# technology
+## technology
 - Html
 - Css
 - Tailwind
 - javasctipt
 
-# Features
+## Features
 - CleanCode
 - Responsive For all Devices
 - Principled design
 
-# demo
+## demo
 <img src="./public/imges/demo/Screenshot (236).png" alt="">
 <img src="./public/imges/demo/Screenshot (237).png" alt="">
 <img src="./public/imges/demo/Screenshot (238).png" alt="">
